@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #10a0af;
+  position: relative;
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body::before {
+  display: block;
+  content: url(./images/bg-pattern-top.svg);
+  top: -100%;
+  left: -150%;
+  position: absolute;
+  z-index: -1;
+}
+.card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+}
+.card__header {
+  background: url(./images/bg-pattern-card.svg);
+  height: 140px;
+  width: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card__body img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -50px;
+  margin-left: 120px;
+  display: block;
+  margin-bottom: 40px;
+}
+.card__body::after {
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background: hsl(0, 0%, 59%);
+}
+.card__body p {
+  margin-bottom: 40px;
+}
+h1 {
+  color: hsl(229, 23%, 23%);
+  font-weight: 600;
+}
+.age,
+p {
+  color: hsl(0, 0%, 59%);
+  margin-top: 10px;
+}
+.card__footer {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.item {
+  flex: 1;
+}
+@media only screen and (min-width: 600px) {
+  body::before {
+    display: block;
+    content: url(./images/bg-pattern-top.svg);
+    top: -100%;
+    left: -70%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 900px) {
+  body::before {
+    display: block;
+    content: url(./images/bg-pattern-top.svg);
+    top: -100%;
+    left: -50%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  body::before {
+    display: block;
+    content: url(./images/bg-pattern-top.svg);
+    top: -100%;
+    left: -40%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body::before {
+    display: block;
+    content: url(./images/bg-pattern-top.svg);
+    top: -100%;
+    left: -30%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  body::before {
+    display: block;
+    content: url(./images/bg-pattern-top.svg);
+    top: -100%;
+    left: -20%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  body::before {
+    display: block;
+    content: url(./images/bg-pattern-top.svg);
+    top: -100%;
+    left: -10%;
+    position: absolute;
+    z-index: -1;
+  }
+}
